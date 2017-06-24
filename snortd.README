@@ -1,11 +1,13 @@
-The snortd file goes in /etc/init.d/
-
+The snortd file is designed to work with Rasbian OS on a Raspberry Pi. 
 It is designed to start Snort as a daemon on boot.
-After copying the snortd file to /etc/init.d/ you need to run:
 
-    sudo update-rc.d snortd defaults
+Copy the snortd file to /etc/init.d/ and run:
 
-This will copy the required files/links into the rc?.d directories.
+    sudo chmod 755 /etc/init.d/snortd
+    sudo update-rc.d /etc/init.d/snortd defaults
+
+This will make snortd executable and copy the required files/links
+into the rc?.d directories.
 
 For usage just run this command:
 
