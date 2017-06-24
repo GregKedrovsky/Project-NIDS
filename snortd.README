@@ -1,4 +1,4 @@
-The snortd file is designed to work with Rasbian OS on a Raspberry Pi. 
+The snortd file is designed to work with Raspbian OS on a Pi. 
 It is designed to start Snort as a daemon on boot.
 
 Copy the snortd file to /etc/init.d/ and run:
