@@ -1,0 +1,17 @@
+The snortd file goes in /etc/init.d/
+
+It is designed to start Snort as a daemon on boot.
+After copying the snortd file to /etc/init.d/ you need to run:
+
+    sudo update-rc.d snortd defaults
+
+This will copy the required files/links into the rc?.d directories.
+
+For usage just run this command:
+
+    /etc/init.d/snortd
+
+To remove it, just delete the snortd file from /etc/init.d/ and
+run the following:
+
+    sudo update-rc.d snortd remove
