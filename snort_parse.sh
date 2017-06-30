@@ -1,8 +1,5 @@
 #!/bin/bash -
 
-# TESTING =============================================================
-count=1
-
 ## Check to see if the proper argument was given ----------------------
 if [ $# -lt 1 ]
 then
@@ -16,9 +13,12 @@ else
     exit 1 
 fi
 
-## Create a variable to snort each of the processed records
-csv_records=''
+# For visual of processing progress -----------------------------------
+count=1
 lines_in_file=$(wc -l $input | cut  -d ' ' -f 1)
+
+## Create a variable to collect each of the processed records ---------
+csv_records=''
 
 ## Create a unique file name for the custom csv file ------------------
 current_date=$(date +%F)
@@ -41,6 +41,24 @@ touch $filename
 
 # Process the csv file from Snort -------------------------------------
 
+# FUNCTION: check src and dst IPs to see if they are private
+# Positional parameters in order: ip_oct1, ip_oct2, ip_oct3
+function pvt_ip()
+{
+    if [[ $1 -eq 192 && $2 -eq 168 && $3 -eq 0 ]]
+    then
+        return 0
+    elif [[ $1 -eq 172 && $2 -eq 16 ]]
+    then
+        return 0
+    elif [[ $1 -eq 10 ]]
+    then
+        return 0
+    else
+        return 1
+    fi
+    # NOTE: 0 is true, 1 is fale
+} 
 
 
 # Put the old file separator into a file for safe-keeping
@@ -48,21 +66,26 @@ DEFAULT_IFS=$IFS
 # Change the file separator to a comma for my csv files
 IFS=,
 
-# Set variables - Processing one line of input csv at a time...
-while read timestamp proto msg dst dst_port src src_port
+# Set variables - Processing one line of csv input at a time...
+# Pi /etc/snort/snort.conf reads:
+# output alert_csv: alerts.csv timestamp,proto,msg,src,srcport,dst,dstport
+# 
+while read timestamp proto msg src src_port dst dst_port
 do
 
+    # echo "$timestamp, $proto, $msg, $src, $src_port, $dst, $dst_port"
+
     # Time & Date
-    if [ $timestamp ] # if /string/ is not null... 
+    if [ $timestamp ]
     then
-        date=$(echo $timestamp | cut -d '-' -f 1)
-        time=$(echo $timestamp | cut -d '-' -f 2)
-        month=$(echo $date | cut -d "/" -f 1)
-        day=$(echo $date | cut -d "/" -f 2)
-        year=20$(echo $date | cut -d "/" -f 3)
+        date=$(echo $timestamp | cut -d - -f 1)
+        time=$(echo $timestamp | cut -d - -f 2)
+        month=$(echo $date | cut -d / -f 1)
+        day=$(echo $date | cut -d / -f 2)
+        year=20$(echo $date | cut -d / -f 3)
         hours=$(echo $time | cut -d : -f 1)
-        minutes=$(echo $time | cut -d ":" -f 2)
-        seconds=$(echo $time | cut -d ":" -f 3)
+        minutes=$(echo $time | cut -d : -f 2)
+        seconds=$(echo $time | cut -d : -f 3 | sed -e 's/[[:space:]]*$//')
     else 
         timestamp=0
         date=0
@@ -111,33 +134,38 @@ do
         dst_port="none"
     fi
 
-    ## Geo-Location from IP
-    ip_oct1=$(echo $src | cut -d . -f 1)
-    ip_oct2=$(echo $src | cut -d . -f 2)
-    ip_oct3=$(echo $src | cut -d . -f 3)
+    ## SOURCE: Separate IP octets for check (if pvt ip)
+    src_ip_oct1=$(echo $src | cut -d . -f 1)
+    src_ip_oct2=$(echo $src | cut -d . -f 2)
+    src_ip_oct3=$(echo $src | cut -d . -f 3)
 
-    # Check to see if IP is from a private address space
-    if [[ $ip_oct1 -eq 192 && $ip_oct2 -eq 168 && $ip_oct3 -eq 0 ]]
+    ## DESTINATION: Separate IP octets for check (if pvt ip)
+    dst_ip_oct1=$(echo $dst | cut -d . -f 1)
+    dst_ip_oct2=$(echo $dst | cut -d . -f 2)
+    dst_ip_oct3=$(echo $dst | cut -d . -f 3)
+
+    # GEO-IP: Find which IP (if either) is not a private IP
+    # Only 1 IP will (possibly) be non-pvt; the other is my HackNet
+    # The value returned by the function is stored in $?
+
+    if ! pvt_ip $src_ip_oct1 $src_ip_oct2 $src_ip_oct3
     then
-        pvt_ip='yes'
-    elif [[ $ip_oct1 -eq 172 && $ip_oct2 -eq 16 ]]
-    then
-        pvt_ip='yes'
-    elif [[ $ip_oct1 -eq 10 ]]
-    then
-        pvt_ip='yes'
+        geoIP=$src
+    elif ! pvt_ip $dst_ip_oct1 $dst_ip_oct2 $dst_ip_oct3
+    then 
+        geoIP=$dst 
     else
-        pvt_ip='no'
+        geoIP=''
     fi
-
+    
     # Revert to default IFS to get comma separated geolocation files
     IFS_COMMA=$IFS
     IFS=$DEFAULT_IFS
 
-    if [ $pvt_ip = 'no' ]
+    if [ $geoIP ]
     then
 
-        location=$(geoiplookup $src)
+        location=$(geoiplookup $geoIP)
 
         loc1_country=$(echo $location | cut -d ':' -f 2 | sed 's/Geo.*$//')
         loc2_city=$(echo $location | cut -d ':' -f 3 | sed 's/ Geo.*$//')
@@ -151,12 +179,12 @@ do
         latitude=$(echo $loc2_city | cut -d , -f 7)
 
     else 
-        country='none [pvt ip]'
-        state='none [pvt ip]'
-        city='none [pvt ip]'
-        postal_code='none [pvt ip]'
-        longitude='none [pvt ip]'
-        latitude='none [pvt ip]'
+        country='none [pvt ips]'
+        state='none [pvt ips]'
+        city='none [pvt ip]s'
+        postal_code='none [pvt ips]'
+        longitude='none [pvt ips]'
+        latitude='none [pvt ips]'
     
     fi
 
@@ -184,9 +212,7 @@ do
     csv_fields="$csv_fields, $proto, $msg, $src, $src_port, $dst, $dst_port"
     csv_fields="$csv_fields, $country, $state, $city, $postal_code, $longitude, $latitude\n"
     
-    # FOR TESTING # echo -e $csv_fields    
     csv_records="$csv_records$csv_fields"
-    # FOR TESTING # echo -e $csv_records
 
     echo -e "$count\tof\t$lines_in_file"
     ((count++))
@@ -196,7 +222,8 @@ do
 
 done <$input
 
-echo "Exporting..."
+echo "Made backup: $file_to_move"
+echo "Exporting to $filename"
 
 printf "$csv_records" >> $filename
 
