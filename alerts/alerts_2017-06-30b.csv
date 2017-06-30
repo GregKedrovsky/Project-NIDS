@@ -1,0 +1,67 @@
+2017, 06, 30, 09, 12, 23.257791, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 49867, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 12, 26.951302, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 49922, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 28.897435, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50226, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 32.010085, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50236, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 32.329560, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50241, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 33.909249, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50263, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 34.914946, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50274, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 36.743284, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50303, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 39.115447, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50336, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 39.834864, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50346, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 40.636884, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50357, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 17, 42.404379, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50382, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 26, 06.277598, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50436, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 26, 07.785520, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50461, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 26, 07.923108, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50463, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 26, 09.613620, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50483, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 26, 10.805827, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50502, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 16.107367, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50512, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 16.680724, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50523, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 19.790549, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50567, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 20.719831, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50582, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 24.427162, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50632, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 24.509940, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50633, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 27, 26.039386, TCP, "Reset outside window", 172.16.0.12, 8081, 192.168.0.101, 50653, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 56.995084, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36247, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 57.364386, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36253, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 57.583925, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36256, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 58.364133, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36266, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 58.605007, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36269, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 58.940088, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36273, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 59.246861, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36276, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 59.336603, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36278, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 41, 59.707688, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36282, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 42, 00.210113, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36288, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 09, 42, 00.396850, TCP, "Reset outside window", 172.16.0.12, 8081, 10.0.0.1, 36290, none [pvt ips], none [pvt ips], none [pvt ip]s, none [pvt ips], none [pvt ips], none [pvt ips]
+2017, 06, 30, 11, 59, 48.964181, none, "(spp_sdf) SDF Combination Alert", 23.228.128.201, none, 172.16.0.12, none,  United States,  Missouri,  Kansas City,  64113,  39.014198,  -94.595100
+2017, 06, 30, 12, 00, 21.588606, none, "(spp_sdf) SDF Combination Alert", 23.228.128.201, none, 172.16.0.12, none,  United States,  Missouri,  Kansas City,  64113,  39.014198,  -94.595100
+2017, 06, 30, 15, 35, 57.148970, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50370,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 57.980538, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50397,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 58.300429, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50405,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 58.775126, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50415,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 59.098356, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50425,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 59.405630, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50434,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 35, 59.734249, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50443,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 00.054921, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50452,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 00.370040, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50461,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 00.689940, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50470,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 01.009922, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50480,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 01.326911, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50488,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 01.649894, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50503,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 01.982688, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50512,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 02.307155, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50519,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 02.636004, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50528,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 03.190392, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50542,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 03.746053, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50558,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 04.065017, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50566,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 04.397539, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50571,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 04.722245, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50580,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 05.041782, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50587,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 05.380004, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50598,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 05.741851, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50609,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 15, 36, 06.317624, TCP, "Reset outside window", 172.16.0.12, 8081, 108.16.61.90, 50623,  United States,  Pennsylvania,  Malvern,  19355,  40.040199,  -75.533203
+2017, 06, 30, 16, 04, 12.385330, none, "(spp_sdf) SDF Combination Alert", 23.59.189.96, none, 172.16.0.12, none,  United States,  Massachusetts,  Cambridge,  02142,  42.362598,  -71.084297
+2017, 06, 30, 17, 07, 07.845744, TCP, "Reset outside window", 172.16.0.12, 8081, 94.230.150.6, 49770,  Czech Republic,  Hlavni mesto Praha,  Prague,  14000,  50.083302,  14.466700
+2017, 06, 30, 17, 07, 08.923319, TCP, "Reset outside window", 172.16.0.12, 8081, 94.230.150.6, 49771,  Czech Republic,  Hlavni mesto Praha,  Prague,  14000,  50.083302,  14.466700
+2017, 06, 30, 17, 07, 35.057875, TCP, "Reset outside window", 172.16.0.12, 8081, 94.230.150.6, 49822,  Czech Republic,  Hlavni mesto Praha,  Prague,  14000,  50.083302,  14.466700
+2017, 06, 30, 17, 07, 36.055439, TCP, "Reset outside window", 172.16.0.12, 8081, 94.230.150.6, 49825,  Czech Republic,  Hlavni mesto Praha,  Prague,  14000,  50.083302,  14.466700
