@@ -1,2 +1,2 @@
 # nids
-CSV files of snort alerts
+respository of my files from my Snort/NIDS project
