@@ -16,7 +16,7 @@ DAEMON=$DIR/snort
 DAEMON_NAME=snortd
 
 # command line options for my daemon
-DAEMON_OPTS="-D -y -u snort -g snort -c /etc/snort/snort.conf -i eth0"
+DAEMON_OPTS="-y -u snort -g snort -c /etc/snort/snort.conf"
 
 # This line determines which user runs the script
 # root not generally recommended, but necessary on the Pi
