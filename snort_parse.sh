@@ -1,5 +1,8 @@
 #!/bin/bash -
 
+# TESTING =============================================================
+count=1
+
 ## Check to see if the proper argument was given ----------------------
 if [ $# -lt 1 ]
 then
@@ -12,6 +15,10 @@ else
     echo "Not a valid filename."
     exit 1 
 fi
+
+## Create a variable to snort each of the processed records
+csv_records=''
+lines_in_file=$(wc -l $input | cut  -d ' ' -f 1)
 
 ## Create a unique file name for the custom csv file ------------------
 current_date=$(date +%F)
@@ -173,15 +180,25 @@ do
     #echo 
 
     ## Export all my variables into one custom csv file
-    export_csv="$year, $month, $day, $hours, $minutes, $seconds"
-    export_csv="$export_csv, $proto, $msg, $src, $src_port, $dst, $dst_port"
-    export_csv="$export_csv, $country, $state, $city, $postal_code, $longitude, $latitude\n"
-    printf "$export_csv" >> $filename
+    csv_fields="$year, $month, $day, $hours, $minutes, $seconds"
+    csv_fields="$csv_fields, $proto, $msg, $src, $src_port, $dst, $dst_port"
+    csv_fields="$csv_fields, $country, $state, $city, $postal_code, $longitude, $latitude\n"
+    
+    # FOR TESTING # echo -e $csv_fields    
+    csv_records="$csv_records$csv_fields"
+    # FOR TESTING # echo -e $csv_records
+
+    echo -e "$count\tof\t$lines_in_file"
+    ((count++))
 
     # Return to comma for next loop
     IFS=$IFS_COMMA
 
 done <$input
+
+echo "Exporting..."
+
+printf "$csv_records" >> $filename
 
 # Put the old file separator back into environment variable
 IFS=$DEFAULT_IFS
