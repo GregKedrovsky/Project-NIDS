@@ -1,18 +1,16 @@
 #!/bin/bash -
 
-## Check to see if we have an alerts.csv file  ------------------------
-
-dir='/home/greg/snort_working'
-file_original='alerts.csv'
-input="$dir/$file_original"
-
-if [ ! -f $input ]
+## Check to see if the proper argument was given ----------------------
+if [ $# -lt 1 ]
 then
-    echo "File $input does not exist. Exiting."
+    echo "No file name given."
     exit 1
+elif [ -f $1 ]
+then 
+    input=$1
 else
-    echo $(date)
-    echo "Processing $input"
+    echo "Not a valid filename."
+    exit 1 
 fi
 
 # For visual of processing progress -----------------------------------
@@ -24,11 +22,11 @@ csv_records=''
 
 ## Create a unique file name for the custom csv file ------------------
 current_date=$(date +%F)
-file_processed=alerts_${current_date}.csv
+filename=alerts_${current_date}.csv
 
-if [ -f $file_processed ] 
+if [ -f $filename ] 
 then
-    file_to_move=$file_processed
+    file_to_move=$filename
     counter=1001
     while [ -f $file_to_move ]
     do
@@ -36,17 +34,15 @@ then
         file_to_move=$file_to_move.${counter}.csv
         ((counter++))
     done
-    mv -n $file_processed $file_to_move
+    mv -n $filename $file_to_move
 fi
 
-touch $file_processed
+touch $filename
 
 # Process the csv file from Snort -------------------------------------
 
 # FUNCTION: check src and dst IPs to see if they are private
 # Positional parameters in order: ip_oct1, ip_oct2, ip_oct3
-# NOTE: 0 is true, 1 is false
-#
 function pvt_ip()
 {
     if [[ $1 -eq 192 && $2 -eq 168 && $3 -eq 0 ]]
@@ -61,6 +57,7 @@ function pvt_ip()
     else
         return 1
     fi
+    # NOTE: 0 is true, 1 is fale
 } 
 
 
@@ -69,7 +66,8 @@ DEFAULT_IFS=$IFS
 # Change the file separator to a comma for my csv files
 IFS=,
 
-# Set variables - one line of csv input at a time. snort.conf reads:
+# Set variables - Processing one line of csv input at a time...
+# Pi /etc/snort/snort.conf reads:
 # output alert_csv: alerts.csv timestamp,proto,msg,src,srcport,dst,dstport
 # 
 while read timestamp proto msg src src_port dst dst_port
@@ -148,7 +146,8 @@ do
 
     # GEO-IP: Find which IP (if either) is not a private IP
     # Only 1 IP will (possibly) be non-pvt; the other is my HackNet
-    #
+    # The value returned by the function is stored in $?
+
     if ! pvt_ip $src_ip_oct1 $src_ip_oct2 $src_ip_oct3
     then
         geoIP=$src
@@ -213,27 +212,23 @@ do
     csv_fields="$csv_fields, $proto, $msg, $src, $src_port, $dst, $dst_port"
     csv_fields="$csv_fields, $country, $state, $city, $postal_code, $longitude, $latitude\n"
     
-    ## Add the new, shiny record to the collection
     csv_records="$csv_records$csv_fields"
 
-    echo "  $count of $lines_in_file"
+    echo -e "$count\tof\t$lines_in_file"
     ((count++))
 
-    # Return IFS to comma for next loop
+    # Return to comma for next loop
     IFS=$IFS_COMMA
 
 done <$input
 
 echo "Made backup: $file_to_move"
-echo "Exporting to $file_processed"
+echo "Exporting to $filename"
 
-printf "$csv_records" >> $file_processed
+printf "$csv_records" >> $filename
 
 # Put the old file separator back into environment variable
 IFS=$DEFAULT_IFS
 
-# Delete the original alert.csv file and end this mess
-backup_file_processed=alerts_backup_${current_date}.csv
-echo "Moving $dir/$file_original to $dir/$backup_file_processed"
-mv -v $dir/$file_original $dir/$backup_file_processed
-echo "We're done"
+# Delete the original alert.csv file
+rm $1
