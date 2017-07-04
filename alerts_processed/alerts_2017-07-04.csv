@@ -1,0 +1,40 @@
+2017, 07, 03, 05, 21, 15.196399, TCP, "Reset outside window", 172.16.0.12, 8081, 185.117.118.234, 42990, IP Address not found, IP Address not found, IP Address not found, IP Address not found, IP Address not found, IP Address not found
+2017, 07, 03, 05, 21, 17.328189, TCP, "Reset outside window", 172.16.0.12, 8081, 185.117.118.234, 38775, IP Address not found, IP Address not found, IP Address not found, IP Address not found, IP Address not found, IP Address not found
+2017, 07, 03, 05, 21, 30.243881, TCP, "Reset outside window", 172.16.0.12, 8081, 5.196.29.217, 56662,  France,  N/A,  N/A,  N/A,  48.860001,  2.350000
+2017, 07, 03, 05, 21, 32.097289, TCP, "Reset outside window", 172.16.0.12, 8081, 5.196.29.217, 56670,  France,  N/A,  N/A,  N/A,  48.860001,  2.350000
+2017, 07, 03, 05, 21, 58.780187, TCP, "Reset outside window", 172.16.0.12, 8081, 178.17.174.14, 37686,  Moldova,  Chisinau,  Chisinau,  N/A,  47.005600,  28.857500
+2017, 07, 03, 05, 22, 01.140141, TCP, "Reset outside window", 172.16.0.12, 8081, 178.17.174.14, 37903,  Moldova,  Chisinau,  Chisinau,  N/A,  47.005600,  28.857500
+2017, 07, 03, 06, 56, 16.657557, TCP, "Reset outside window", 172.16.0.12, 8081, 100.2.127.204, 18879,  United States,  New York,  Staten Island,  10309,  40.529999,  -74.220596
+2017, 07, 03, 07, 39, 39.005570, TCP, "Reset outside window", 172.16.0.12, 8081, 47.199.195.85, 57905,  Canada,  Ontario,  Ottawa,  K2H,  45.315498,  -75.836998
+2017, 07, 03, 08, 20, 19.378412, none, "(spp_sdf) SDF Combination Alert", 23.228.128.208, none, 172.16.0.12, none,  United States,  Missouri,  Kansas City,  64113,  39.014198,  -94.595100
+2017, 07, 03, 11, 16, 17.069077, TCP, "Reset outside window", 172.16.0.12, 8081, 100.2.127.204, 34074,  United States,  New York,  Staten Island,  10309,  40.529999,  -74.220596
+2017, 07, 03, 12, 55, 09.646001, TCP, "Reset outside window", 172.16.0.12, 3012, 82.145.215.118, 443,  Europe,  N/A,  N/A,  N/A,  47.000000,  8.000000
+2017, 07, 03, 13, 32, 42.805300, TCP, "Reset outside window", 172.16.0.12, 8081, 79.150.232.39, 52344,  Spain,  Catalonia,  Mediona,  08773,  41.478001,  1.612200
+2017, 07, 03, 13, 32, 43.830358, TCP, "Reset outside window", 172.16.0.12, 8081, 79.150.232.39, 52347,  Spain,  Catalonia,  Mediona,  08773,  41.478001,  1.612200
+2017, 07, 03, 13, 32, 48.360724, TCP, "Reset outside window", 172.16.0.12, 8081, 79.150.232.39, 52353,  Spain,  Catalonia,  Mediona,  08773,  41.478001,  1.612200
+2017, 07, 03, 13, 43, 16.123308, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52285,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 17.467357, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52291,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 18.077780, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52293,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 18.677645, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52296,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 19.270283, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52299,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 19.873844, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52304,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 20.513938, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52305,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 21.168342, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52307,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 21.487399, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52309,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 22.101392, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52315,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 22.684556, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52318,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 23.298605, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52319,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 23.923474, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52323,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 24.533393, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52325,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 25.141183, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52328,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 25.711580, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52331,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 29.517359, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52340,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 30.115869, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52343,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 30.724066, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52344,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 13, 43, 31.357260, TCP, "Reset outside window", 172.16.0.12, 8081, 68.203.10.208, 52345,  United States,  Texas,  Austin,  78759,  30.400000,  -97.752800
+2017, 07, 03, 15, 23, 43.452412, TCP, "Reset outside window", 172.16.0.12, 8081, 178.157.251.18, 39793,  Denmark,  Midtjylland,  Tørring,  N/A,  55.853901,  9.484100
+2017, 07, 03, 15, 23, 44.568285, TCP, "Reset outside window", 172.16.0.12, 8081, 178.157.251.18, 39674,  Denmark,  Midtjylland,  Tørring,  N/A,  55.853901,  9.484100
+2017, 07, 03, 16, 24, 44.890725, none, "(spp_sdf) SDF Combination Alert", 23.228.128.201, none, 172.16.0.12, none,  United States,  Missouri,  Kansas City,  64113,  39.014198,  -94.595100
+2017, 07, 03, 16, 25, 17.108500, none, "(spp_sdf) SDF Combination Alert", 23.228.128.201, none, 172.16.0.12, none,  United States,  Missouri,  Kansas City,  64113,  39.014198,  -94.595100
+2017, 07, 03, 17, 49, 29.161981, TCP, "Reset outside window", 172.16.0.12, 8081, 195.22.24.162, 54560,  Portugal,  Lisboa,  Pontinha,  1675-003,  38.767700,  -9.199300
+2017, 07, 03, 17, 49, 34.774833, none, "(portscan) UDP Portsweep", 172.16.0.12, none, 195.22.24.162, none,  Portugal,  Lisboa,  Pontinha,  1675-003,  38.767700,  -9.199300
