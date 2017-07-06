@@ -2,7 +2,7 @@
 
 ## Check to see if we have an alerts.csv file  ------------------------
 
-dir='/var/log/snort/proc'
+dir='/home/greg/snort_working'
 file_original='alerts.csv'
 input="$dir/$file_original"
 
@@ -23,7 +23,7 @@ lines_in_file=$(wc -l $input | cut  -d ' ' -f 1)
 csv_records=''
 
 ## Create a unique file name for the custom csv file ------------------
-current_date=$(date +%F_%s)
+current_date=$(date +%F)
 file_processed=alerts_${current_date}.csv
 
 if [ -f $file_processed ] 
@@ -216,7 +216,7 @@ do
     ## Add the new, shiny record to the collection
     csv_records="$csv_records$csv_fields"
 
-    echo -e "  $count\tof\t$lines_in_file\t$geoIP\t$country\t$msg"
+    echo "  $count of $lines_in_file"
     ((count++))
 
     # Return IFS to comma for next loop
