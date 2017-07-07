@@ -24,7 +24,7 @@ csv_records=''
 
 ## Create a unique file name for the custom csv file ------------------
 current_date=$(date +%F_%s)
-file_processed=$dir/alerts_${current_date}.csv
+file_processed=alerts_${current_date}.csv
 
 if [ -f $file_processed ] 
 then
@@ -36,7 +36,7 @@ then
         file_to_move=$file_to_move.${counter}.csv
         ((counter++))
     done
-    mv -vn $file_processed $file_to_move
+    mv -n $file_processed $file_to_move
 fi
 
 touch $file_processed
@@ -180,12 +180,12 @@ do
         latitude=$(echo $loc2_city | cut -d , -f 7)
 
     else 
-        country='none [pvt ip]'
-        state='none [pvt ip]'
-        city='none [pvt ip]'
-        postal_code='none [pvt ip]'
-        longitude='none [pvt ip]'
-        latitude='none [pvt ip]'
+        country='none [pvt ips]'
+        state='none [pvt ips]'
+        city='none [pvt ip]s'
+        postal_code='none [pvt ips]'
+        longitude='none [pvt ips]'
+        latitude='none [pvt ips]'
     
     fi
 
@@ -233,7 +233,7 @@ printf "$csv_records" >> $file_processed
 IFS=$DEFAULT_IFS
 
 # Delete the original alert.csv file and end this mess
-backup_file_processed=$dir/alerts_backup_${current_date}.csv
-echo "Moving $input to $backup_file_processed"
-mv -vn $input $backup_file_processed
+backup_file_processed=alerts_backup_${current_date}.csv
+echo "Moving $dir/$file_original to $dir/$backup_file_processed"
+mv -v $dir/$file_original $dir/$backup_file_processed
 echo "We're done"
