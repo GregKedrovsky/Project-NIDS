@@ -9,10 +9,6 @@ else
     input=$(echo "$input")
 fi
 
-echo "$input"
-
-
-
 # Process the csv file from Snort -------------------------------------
 
 # FUNCTION: check src and dst IPs to see if they are private
@@ -146,7 +142,7 @@ do
     fi
 
     # Print the variables you want to display
-    printf "%s %15s %16s %-18s %-15s %s\n" "$timestamp" "$src" "$dst" "$country" "$city" "$msg"
+    printf "  %s %15s %16s \t %-18s %-18s %-18s %s\n" "$timestamp" "$src" "$dst" "$country" "$state" "$city" "$msg"
 
     # Return IFS to comma for next loop
     IFS=$IFS_COMMA
