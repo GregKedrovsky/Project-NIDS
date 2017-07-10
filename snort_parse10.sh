@@ -26,7 +26,6 @@ csv_records=''
 current_date=$(date +%F_%s)
 file_processed=$dir/alerts_${current_date}.csv
 
-## Failsafe Check: b/c using seconds for file_processed, s/b unique
 if [ -f $file_processed ] 
 then
     file_to_move=$file_processed
@@ -37,7 +36,6 @@ then
         file_to_move=$file_to_move.${counter}.csv
         ((counter++))
     done
-    echo "Made backup:"
     mv -vn $file_processed $file_to_move
 fi
 
@@ -210,12 +208,12 @@ do
     #echo "   e. Longitude:   $longitude"
     #echo 
 
-    ## Export all my variables (record fields) into one custom csv variable (record)
+    ## Export all my variables into one custom csv file
     csv_fields="$year, $month, $day, $hours, $minutes, $seconds"
     csv_fields="$csv_fields, $proto, $msg, $src, $src_port, $dst, $dst_port"
     csv_fields="$csv_fields, $country, $state, $city, $postal_code, $longitude, $latitude\n"
     
-    ## Add the new, shiny variable (record) to the collection
+    ## Add the new, shiny record to the collection
     csv_records="$csv_records$csv_fields"
 
     echo -e "  $count\tof\t$lines_in_file\t$geoIP\t$country\t$msg"
@@ -226,33 +224,16 @@ do
 
 done <$input
 
+echo "Made backup: $file_to_move"
+echo "Exporting to $file_processed"
+
+printf "$csv_records" >> $file_processed
+
 # Put the old file separator back into environment variable
 IFS=$DEFAULT_IFS
 
-# Export the processed records to a file
-echo
-echo "Exporting to $file_processed"
-printf "$csv_records" >> $file_processed
-
 # Delete the original alert.csv file and end this mess
-echo
-backup_original_alerts=$dir/alerts_backup_${current_date}.csv
-echo "Moving $input to $backup_original_alerts"
-mv -vn $input $backup_original_alerts
-
-# Copy files to Git and Backup directories
-echo
-# 1. Copy processed file
-cp -vn $file_processed /home/pi/git/nids/alerts_processed/
-chown pi:pi /home/pi/git/nids/alerts_processed/*
-# 2. Copy original alert file (raw)
-cp -vn $backup_original_alerts /home/pi/git/nids/alerts_raw/
-chown pi:pi /home/pi/git/nids/alerts_raw/*
-# 3. Copy snort log files
-cp -vn snort.log.* /home/pi/git/nids/logs/
-chown pi:pi /home/pi/git/nids/logs/*
-# 4. Copy everything to backup drive
-
-# Done
-echo
+backup_file_processed=$dir/alerts_backup_${current_date}.csv
+echo "Moving $input to $backup_file_processed"
+mv -vn $input $backup_file_processed
 echo "We're done"
