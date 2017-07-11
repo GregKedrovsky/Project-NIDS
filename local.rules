@@ -1,0 +1,35 @@
+# Copyright 2001-2013 Sourcefire, Inc. All Rights Reserved.
+#
+# This file contains (i) proprietary rules that were created, tested and certified by
+# Sourcefire, Inc. (the "VRT Certified Rules") that are distributed under the VRT
+# Certified Rules License Agreement (v 2.0), and (ii) rules that were created by
+# Sourcefire and other third parties (the "GPL Rules") that are distributed under the
+# GNU General Public License (GPL), v2.
+# 
+# The VRT Certified Rules are owned by Sourcefire, Inc. The GPL Rules were created
+# by Sourcefire and other third parties. The GPL Rules created by Sourcefire are
+# owned by Sourcefire, Inc., and the GPL Rules not created by Sourcefire are owned by
+# their respective creators. Please see http://www.snort.org/snort/snort-team/ for a
+# list of third party owners and their respective copyrights.
+# 
+# In order to determine what rules are VRT Certified Rules or GPL Rules, please refer
+# to the VRT Certified Rules License Agreement (v2.0).
+#
+#-------------
+# LOCAL RULES
+#-------------
+
+# GAK # Test Rule: ping
+# alert icmp any any -> $HOME_NET any (msg:"GAK - ICMP Test"; sid:10000001; rev:001;)
+
+# GAK # Test Rule: kitty cam logon
+# alert tcp $EXTERNAL_NET any -> $HOME_NET 8081 (msg:"Kitty Cam Port Hit"; sid:10000002; rev:001;)
+# alert udp $EXTERNAL_NET any -> $HOME_NET 8081 (msg:"Kitty Cam Port Hit"; sid:10000003; rev:001;)
+
+# GAK # Test Rule: HoneyPot Ports
+alert tcp $EXTERNAL_NET any -> 172.16.0.4 80 (msg:"HoneyPot HTTP Port 80 Hit"; sid:10000004; rev:001;)
+alert udp $EXTERNAL_NET any -> 172.16.0.4 80 (msg:"HoneyPot HTTP Port 80 Hit"; sid:10000005; rev:001;)
+alert tcp $EXTERNAL_NET any -> 172.16.0.4 21 (msg:"HoneyPot FTP Port 21 Hit"; sid:10000006; rev:001;)
+alert tcp $EXTERNAL_NET any -> 172.16.0.4 23 (msg:"HoneyPot Telnet Port 23 Hit"; sid:10000007; rev:001;)
+alert tcp $EXTERNAL_NET any -> 172.16.0.4 25 (msg:"HoneyPot SMTP Port 25 Hit"; sid:10000008; rev:001;)
+
