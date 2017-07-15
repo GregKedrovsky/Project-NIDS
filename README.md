@@ -4,8 +4,7 @@
 This is a simple data collection project. I want to build a data pool to use during my Database Management class during this coming semester at college.
 
 <h2>Pictures</h2>
-<li>Because everybody likes to see what it looks like... </li>
-<li>http://imgur.com/a/v9huh</li>
+Because everybody likes to see what it looks like: http://imgur.com/a/v9huh
 
 <h2>Technologies Employed</h2>
 Raspberry Pi 3 (running Raspbian)
