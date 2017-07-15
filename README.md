@@ -17,19 +17,33 @@ Mikrotik RB3011UIAS-RM RouterBOARD (to segment my network)
 <h2>Primary Objective</h2>
 Build a pool of data to use, manipulate, and visualize in CIS 260 Database Management, Johnson County Community College (Fall 2017).
 This data pool consists of daily CSV files containing the following data from Snort alerts:
+
 1. Timestamp
+
 2. Protocol
+
 3. Snort Alert Message
+
 4. Source IP
+
 5. Source Port
+
 6. Destination IP
+
 7. Destination Port
+
 Through the use of a shell script, the following geolocation data items are added to the daily CSV file (attempting to reflect a geolocation for the source of the visit to my hackable LAN):
+
 1. Country
+
 2. State
+
 3. City
+
 4. Postal Code
+
 5. Longitude
+
 6. Latitude
 
 <h2>Secondary Objectives</h2>
