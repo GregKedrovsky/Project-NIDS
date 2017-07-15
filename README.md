@@ -6,7 +6,7 @@ This is a simple data collection project. I want to build a data pool to use dur
 <h2>Pictures</h2>
 <ul>
 <li>Because everybody likes to see what it looks like... </li>
-<li>http://imgur.com/a/v9huh</li>
+<li><a hreft="http://imgur.com/a/v9huh" target="_blank">Photos of Setup</a></li>
 </ul>
 
 <h2>Technologies Employed</h2>
