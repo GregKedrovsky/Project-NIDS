@@ -32,4 +32,4 @@ alert udp $EXTERNAL_NET any -> 172.16.0.4 80 (msg:"HoneyPot HTTP Port 80 Hit"; s
 alert tcp $EXTERNAL_NET any -> 172.16.0.4 21 (msg:"HoneyPot FTP Port 21 Hit"; sid:10000006; rev:001;)
 alert tcp $EXTERNAL_NET any -> 172.16.0.4 23 (msg:"HoneyPot Telnet Port 23 Hit"; sid:10000007; rev:001;)
 alert tcp $EXTERNAL_NET any -> 172.16.0.4 25 (msg:"HoneyPot SMTP Port 25 Hit"; sid:10000008; rev:001;)
-
+alert tcp $EXTERNAL_NET any -> 172.16.0.4 445 (msg:"HoneyPot SMB Port 445 Hit"; sid:10000009; rev:001;)
