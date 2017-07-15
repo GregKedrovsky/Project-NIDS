@@ -1,11 +1,13 @@
 # Snort/NIDS Data Collection
 
 <h2>Introduction</h2>
-<p>This is a simple data collection project. I want to build a data pool to use during my Database Management class during this coming semester at college. <\p>
-
-<p><\p>
+This is a simple data collection project. I want to build a data pool to use during my Database Management class during this coming semester at college.
 
 <h2>Pictures</h2>
+<ul>
+<li>Because everybody likes to see what it looks like... </li>
+<li>http://imgur.com/a/v9huh</li>
+</ul>
 
 <h2>Technologies Employed</h2>
 
