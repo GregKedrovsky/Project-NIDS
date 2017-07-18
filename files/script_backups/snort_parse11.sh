@@ -240,25 +240,23 @@ backup_original_alerts=$dir/alerts_backup_${current_date}.csv
 echo "Moving $input to $backup_original_alerts"
 mv -vn $input $backup_original_alerts
 
-# Copy files to git backup directories
+# Copy files to Git and Backup directories
 echo
-
 # 1. Copy processed file
 echo "Copying processed file to git subdir then chown to pi"
-cp -vn $file_processed /home/pi/git/nids/snort_alerts_processed/
-chown -v pi:pi /home/pi/git/nids/snort_alerts_processed/*
-
+cp -vn $file_processed /home/pi/git/nids/alerts_processed/
+chown pi:pi /home/pi/git/nids/alerts_processed/*
 # 2. Copy original alert file (raw)
 echo
 echo "Copying original alerts (marked backup) to git subdir then chown to pi"
-cp -vn $backup_original_alerts /home/pi/git/nids/snort_alerts_raw/
-chown -v pi:pi /home/pi/git/nids/snort_alerts_raw/*
-
+cp -vn $backup_original_alerts /home/pi/git/nids/alerts_raw/
+chown pi:pi /home/pi/git/nids/alerts_raw/*
 # 3. Copy snort log files
 echo
 echo "Copying snort log files to git subdir then chown to pi"
-cp -vn $dir/snort.log.* /home/pi/git/nids/snort_logs/
-chown -v pi:pi /home/pi/git/nids/snort_logs/*
+cp -vn $dir/snort.log.* /home/pi/git/nids/logs/
+chown pi:pi /home/pi/git/nids/logs/*
+# 4. Copy everything to backup drive
 
 # Done
 echo
