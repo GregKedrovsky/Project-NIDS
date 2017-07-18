@@ -1,7 +1,7 @@
 # Snort/NIDS Data Collection
 
 ## Introduction
-This is a simple data collection project. I want to build a data pool to use during my Database Management class during this coming semester at college.
+This is a data collection project. It is designed build a data pool to use during my Database Management class this coming semester at college.
 
 ## Pictures
 Because everybody likes to see what it looks like: [Pics of My Lab](http://imgur.com/a/v9huh).
