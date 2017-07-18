@@ -1,12 +1,12 @@
 # Snort/NIDS Data Collection
 
-<h2>Introduction</h2>
+## Introduction
 This is a simple data collection project. I want to build a data pool to use during my Database Management class during this coming semester at college.
 
-<h2>Pictures</h2>
+## Pictures
 Because everybody likes to see what it looks like: http://imgur.com/a/v9huh
 
-<h2>Technologies Employed</h2>
+## Technologies Employed
 Raspberry Pi 3 (running Raspbian)
 
 Snort NIDS (running on the Pi)
@@ -17,7 +17,7 @@ GitHub (to house my files)
 
 Mikrotik RB3011UIAS-RM RouterBOARD (to segment my network)
 
-<h2>Primary Objective</h2>
+## Primary Objective
 Build a pool of data to use, manipulate, and visualize in CIS 260 Database Management, Johnson County Community College (Fall 2017).
 
 This data pool consists of daily CSV files containing the following data from Snort alerts:
@@ -50,7 +50,7 @@ Through the use of a shell script, the following geolocation data items are adde
 
 6. Latitude
 
-<h2>Secondary Objectives</h2>
+## Secondary Objectives
 Learn more about segmenting a local area network through the installation and configuration of a router.
 
 Learn more about network intrusion and security threats.
@@ -61,14 +61,14 @@ Do something practical and useful with my spare time this summer (there were no 
 
 I also got to play around a little bit with my structured cabling tools (crimpers, etc.).
 
-<h2>Scope</h2>
+## Scope
 This projected is designed primarily for data collection.
 
 The other technologies used to collect the desired data (the “honey pot,” Snort, etc.) were not utilized to their full capabilities. They were put in place to serve the primary objective of gathering simple information on the hits received on vulnerable machines.
 
 The scope was limited because time was limited and learning curves are long. I wanted to accomplish the data collection and along the way learn some things (all during the two months or so I had free from studies at college).
 
-<h2>Process Description</h2>
+## Process Description
 1. Segment my home LAN with the MikroTik Router and isolate the vulnerable subnet.
 
 2. Install and configure Raspbian on the Raspberty Pi 3.
@@ -95,7 +95,7 @@ The scope was limited because time was limited and learning curves are long. I w
 
 13. Set up tmux to watch this thing in action from the command line. It's totally cool.
 
-<h2>References</h2>
+## References
 1. Raspberry Pi Firewall and Intrusion Detection System by fNX in raspberry-pi
 http://www.instructables.com/id/Raspberry-Pi-Firewall-and-Intrusion-Detection-Syst/
 
