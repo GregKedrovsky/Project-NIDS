@@ -60,7 +60,8 @@ The scope was limited because time was limited and learning curves are long. I w
 10. Set up cron jobs on the Pi to move, process, copy, and backup my Snort alert and log files.
 11. Setup a GitHub repository and sync with Git on the Pi (never used Git before).
 12. Write a handful of simple Snort rules to flag hits on open ports.
-13. Set up tmux to watch this thing in action from the command line. It's totally cool.
+13. Open some ports on my ISP-provided router.
+14. Set up tmux to watch this thing in action from the command line. It's totally cool.
 
 ## References
 1. [Raspberry Pi Firewall and Intrusion Detection System by fNX in raspberry-pi](http://www.instructables.com/id/Raspberry-Pi-Firewall-and-Intrusion-Detection-Syst/)
