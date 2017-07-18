@@ -14,7 +14,7 @@ Because everybody likes to see what it looks like: [Pics of My Lab](http://imgur
 - Mikrotik RB3011UIAS-RM RouterBOARD (to segment my network)
 
 ## Primary Objective
-Build a pool of data to use, manipulate, and visualize in CIS 260 Database Management, Johnson County Community College (Fall 2017).
+Build a pool of data to use, manipulate, and visualize in CIS 260 Database Management (Fall 2017).
 
 This data pool consists of daily CSV files containing the following data from Snort alerts:
 1. Timestamp
