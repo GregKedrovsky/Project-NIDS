@@ -63,27 +63,11 @@ The scope was limited because time was limited and learning curves are long. I w
 13. Set up tmux to watch this thing in action from the command line. It's totally cool.
 
 ## References
-1. Raspberry Pi Firewall and Intrusion Detection System by fNX in raspberry-pi
-http://www.instructables.com/id/Raspberry-Pi-Firewall-and-Intrusion-Detection-Syst/
-
-2. Installing Snort on Debian
-https://www.upcloud.com/support/installing-snort-on-debian/
-
-3. How To Configure Snort On Debian
-https://www.vultr.com/docs/how-to-configure-snort-on-debian
-
-4. Webcam Viewing Live Over the Internet Using A Dynamic IP Internet Service
-http://hosteddocs.ittoolbox.com/rv100908b.pdf
-
-5. Getting a Python script to run in the background (as a service) on boot
-(I used this as a patter for my snortd daemon)
-http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/
-
-6. HowTo: Add Jobs To cron Under Linux or UNIX?
-https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
-
-7. A Quick and Easy Guide to tmux
-http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/
-
-8. tmux shortcuts & cheatsheet
-https://gist.github.com/MohamedAlaa/2961058
+1. [Raspberry Pi Firewall and Intrusion Detection System by fNX in raspberry-pi](http://www.instructables.com/id/Raspberry-Pi-Firewall-and-Intrusion-Detection-Syst/)
+2. [Installing Snort on Debian](https://www.upcloud.com/support/installing-snort-on-debian/)
+3. [How To Configure Snort On Debian](https://www.vultr.com/docs/how-to-configure-snort-on-debian)
+4. [Webcam Viewing Live Over the Internet Using A Dynamic IP Internet Service](http://hosteddocs.ittoolbox.com/rv100908b.pdf)
+5. [Getting a Python script to run in the background (as a service) on boot; I used this as a patter for my snortd daemon](http://blog.scphillips.com/posts/2013/07/getting-a-python-script-to-run-in-the-background-as-a-service-on-boot/)
+6. [HowTo: Add Jobs To cron Under Linux or UNIX?](https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/)
+7. [A Quick and Easy Guide to tmux](http://www.hamvocke.com/blog/a-quick-and-easy-guide-to-tmux/)
+8. [tmux shortcuts & cheatsheet](https://gist.github.com/MohamedAlaa/2961058)
