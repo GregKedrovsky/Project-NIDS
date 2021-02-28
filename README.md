@@ -4,7 +4,11 @@
 This is a data collection project. It is designed build a data pool to use during my Database Management class this coming semester at college.
 
 ## Pictures
-Because everybody likes to see what it looks like: [Pics of My Lab](http://imgur.com/a/v9huh).
+Pics of my lab... Because everybody likes to see what it looks like: [Pics of My Lab](http://imgur.com/a/v9huh).
+- [Pic 1](https://nix.kedrovsky.net/_media/nids_pics/nids_pics1.jpg)
+- [Pic 2](https://nix.kedrovsky.net/_media/nids_pics/nids_pics2.jpg)
+- [Pic 3](https://nix.kedrovsky.net/_media/nids_pics/nids_pics3.jpg)
+- [Pic 4](https://nix.kedrovsky.net/_media/nids_pics/nids_pics4.jpg)
 
 ## Technologies Employed
 - Raspberry Pi 3 (running Raspbian)
